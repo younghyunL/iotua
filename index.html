@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IOTUA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #19438B;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Noto Sans KR', sans-serif;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo-img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 20px;
+      background: #fff;
+      padding: 12px;
+    }
+
+    .brand-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.58);
+      margin-bottom: 40px;
+      letter-spacing: 0.4px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      background: rgba(255,255,255,0.13);
+      border: 1.5px solid rgba(255,255,255,0.30);
+      border-radius: 18px;
+      padding: 15px 18px;
+      margin-bottom: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.18s, transform 0.12s;
+    }
+
+    .link-btn:active {
+      transform: scale(0.97);
+      background: rgba(255,255,255,0.22);
+    }
+
+    .icon-wrap {
+      width: 44px;
+      height: 44px;
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .icon-shop { background: #03C75A; }
+    .icon-ig   { background: linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+    .icon-web  { background: #fff; }
+
+    .btn-text { flex: 1; text-align: left; }
+
+    .btn-label {
+      font-size: 11px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 3px;
+      font-weight: 400;
+    }
+
+    .btn-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .btn-arrow {
+      color: rgba(255,255,255,0.45);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .footer {
+      margin-top: 36px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.28);
+      letter-spacing: 0.4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <img class="logo-img" src="data:image/jpeg;base64,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" alt="IOTUA 로고" />
+    <p class="brand-sub">피부가 필요로 하는 모든 것</p>
+
+    <!-- 공식 홈페이지 -->
+    <a class="link-btn"
+       href="https://iotua.co.kr/"
+       target="_blank" rel="noopener">
+      <div class="icon-wrap icon-web">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9" stroke="#19438B" stroke-width="2"/>
+          <path d="M12 3c-2.5 3-2.5 15 0 18M12 3c2.5 3 2.5 15 0 18M3 12h18" stroke="#19438B" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <div class="btn-label">공식 홈페이지</div>
+        <div class="btn-title">iotua.co.kr</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <!-- 스마트스토어 -->
+    <a class="link-btn"
+       href="https://smartstore.naver.com/iotua/products/11898399980?nl-query=%EB%A9%94%EB%94%94%EC%A0%9C%EC%9D%B4%20%EB%8D%94%EB%B8%94%EC%9C%A0%ED%81%AC%EB%A6%BC&nl-au=886d202c0be94e66b6c88b4b77591c60&NaPm=ci%3D886d202c0be94e66b6c88b4b77591c60%7Cct%3Dmny3swdn%7Ctr%3Dnslsl%7Csn%3D12283006%7Chk%3D260e67b633b346a4b5eed3645d81a6ea3854856b"
+       target="_blank" rel="noopener">
+      <div class="icon-wrap icon-shop">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 3h2l.4 2M7 13h10l4-8H5.4" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="9" cy="19" r="1.5" fill="#fff"/>
+          <circle cx="18" cy="19" r="1.5" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <div class="btn-label">네이버 스마트스토어</div>
+        <div class="btn-title">제품 구매하기</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <!-- 인스타그램 -->
+    <a class="link-btn"
+       href="https://www.instagram.com/iotua_official/"
+       target="_blank" rel="noopener">
+      <div class="icon-wrap icon-ig">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="2" width="20" height="20" rx="6" stroke="#fff" stroke-width="2"/>
+          <circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="2"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="btn-text">
+        <div class="btn-label">인스타그램</div>
+        <div class="btn-title">@iotua_official</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <p class="footer">© 2025 IOTUA. All rights reserved.</p>
+
+  </div>
+</body>
+</html>
